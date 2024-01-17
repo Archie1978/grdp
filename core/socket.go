@@ -57,12 +57,6 @@ func (s *SocketLayer) Close() error {
 }
 
 func (s *SocketLayer) StartTLS() error {
-	config := &tls.Config{
-		InsecureSkipVerify:       true,
-		MinVersion:               tls.VersionTLS10,
-		MaxVersion:               tls.VersionTLS13,
-		PreferServerCipherSuites: true,
-	}
 	s.tlsConn = tls.Client(s.conn, ConfigTLS)
 	return s.tlsConn.Handshake()
 }
