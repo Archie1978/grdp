@@ -28,3 +28,4 @@ require (
 )
 
 replace github.com/tomatome/grdp => ./origin/grdp
+replace github.com/tomatome/grdp/core => ./origin/grdp/core
