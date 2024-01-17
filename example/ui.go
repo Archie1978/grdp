@@ -10,13 +10,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/google/gxui/drivers/gl"
+	//"github.com/google/gxui/drivers/gl"
 
 	"github.com/google/gxui"
 	"github.com/google/gxui/samples/flags"
 	"github.com/google/gxui/themes/light"
-	"github.com/tomatome/grdp/core"
-	"github.com/tomatome/grdp/glog"
+	"github.com/Archie1978/grdp/core"
+	"github.com/Archie1978/grdp/glog"
 )
 
 var (
@@ -26,8 +26,8 @@ var (
 )
 
 func StartUI(w, h int) {
-	width, height = w, h
-	gl.StartDriver(appMain)
+	//width, height = w, h
+	//gl.StartDriver(appMain)
 }
 func appMain(driver gxui.Driver) {
 	theme := light.CreateTheme(driver)
