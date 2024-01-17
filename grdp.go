@@ -10,17 +10,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomatome/grdp/plugin/cliprdr"
-	"github.com/tomatome/grdp/protocol/rfb"
+	"github.com/Archie1978/grdp/plugin/cliprdr"
+	"github.com/Archie1978/grdp/protocol/rfb"
 
-	"github.com/tomatome/grdp/core"
-	"github.com/tomatome/grdp/glog"
-	"github.com/tomatome/grdp/protocol/nla"
-	"github.com/tomatome/grdp/protocol/pdu"
-	"github.com/tomatome/grdp/protocol/sec"
-	"github.com/tomatome/grdp/protocol/t125"
-	"github.com/tomatome/grdp/protocol/tpkt"
-	"github.com/tomatome/grdp/protocol/x224"
+	"github.com/Archie1978/grdp/core"
+	"github.com/Archie1978/grdp/glog"
+	"github.com/Archie1978/grdp/protocol/nla"
+	"github.com/Archie1978/grdp/protocol/pdu"
+	"github.com/Archie1978/grdp/protocol/sec"
+	"github.com/Archie1978/grdp/protocol/t125"
+	"github.com/Archie1978/grdp/protocol/tpkt"
+	"github.com/Archie1978/grdp/protocol/x224"
 )
 
 type Client struct {

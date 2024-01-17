@@ -6,13 +6,13 @@ import (
 	"io"
 	"os"
 
-	"github.com/tomatome/grdp/plugin"
+	"github.com/Archie1978/grdp/plugin"
 
-	"github.com/tomatome/grdp/glog"
+	"github.com/Archie1978/grdp/glog"
 
 	"github.com/lunixbochs/struc"
-	"github.com/tomatome/grdp/core"
-	"github.com/tomatome/grdp/protocol/t125/per"
+	"github.com/Archie1978/grdp/core"
+	"github.com/Archie1978/grdp/protocol/t125/per"
 )
 
 var t124_02_98_oid = []byte{0, 0, 20, 124, 0, 1}

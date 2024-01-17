@@ -13,14 +13,14 @@ import (
 
 	"github.com/lunixbochs/struc"
 
-	"github.com/tomatome/grdp/protocol/nla"
+	"github.com/Archie1978/grdp/protocol/nla"
 
-	"github.com/tomatome/grdp/core"
-	"github.com/tomatome/grdp/emission"
-	"github.com/tomatome/grdp/glog"
-	"github.com/tomatome/grdp/protocol/lic"
-	"github.com/tomatome/grdp/protocol/t125"
-	"github.com/tomatome/grdp/protocol/t125/gcc"
+	"github.com/Archie1978/grdp/core"
+	"github.com/Archie1978/grdp/emission"
+	"github.com/Archie1978/grdp/glog"
+	"github.com/Archie1978/grdp/protocol/lic"
+	"github.com/Archie1978/grdp/protocol/t125"
+	"github.com/Archie1978/grdp/protocol/t125/gcc"
 )
 
 /**
