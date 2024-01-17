@@ -1,6 +1,6 @@
 package core
 
-import "github.com/tomatome/grdp/emission"
+import "github.com/Archie1978/grdp/emission"
 
 type Transport interface {
 	Read(b []byte) (n int, err error)
