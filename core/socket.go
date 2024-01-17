@@ -9,9 +9,15 @@ import (
 	//"crypto/tls"
 	"errors"
 	"net"
-
 	"github.com/icodeface/tls"
 )
+
+var ConfigTLS *tls.Config= &tls.Config{
+		InsecureSkipVerify:       true,
+		MinVersion:               tls.VersionTLS10,
+		MaxVersion:               tls.VersionTLS13,
+		PreferServerCipherSuites: true,
+	}
 
 type SocketLayer struct {
 	conn    net.Conn
@@ -57,7 +63,7 @@ func (s *SocketLayer) StartTLS() error {
 		MaxVersion:               tls.VersionTLS13,
 		PreferServerCipherSuites: true,
 	}
-	s.tlsConn = tls.Client(s.conn, config)
+	s.tlsConn = tls.Client(s.conn, ConfigTLS)
 	return s.tlsConn.Handshake()
 }
 
