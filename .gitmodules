@@ -1,0 +1,3 @@
+[submodule "origin/grdp"]
+	path = origin/grdp
+	url = https://github.com/tomatome/grdp.git
