@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/tomatome/grdp/plugin/cliprdr"
+
 
 	"github.com/tomatome/grdp/plugin"
 
@@ -68,8 +68,6 @@ func uiRdp(info *Info) (error, *RdpClient) {
 		fmt.Println("Login:", err)
 		return err, nil
 	}
-	cc := cliprdr.NewCliprdrClient()
-	g.channels.Register(cc)
 
 	g.pdu.On("error", func(e error) {
 		glog.Info("on error:", e)
